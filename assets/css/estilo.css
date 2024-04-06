@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("des.css");
+/* Reset */
+
+*{
+ 
+  margin: 0;
+  font-family: 'Poppins',"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body *{
+  
+  box-sizing: border-box;
+  
+
+}
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.frase-topo-equipe{
+    
+  justify-content: right;
+  align-items:right;
+  padding: 0rem 12%;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+.equipe{
+    
+  background-size: cover;
+  
+}
+
+/* Barra de rolagem */
+body::-webkit-scrollbar {
+
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+   border-radius: 50;
+  background-color: rgb(71, 71, 73);
+  border: 3px solid transparent;
+}
+
+/* Menu */
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: background-color 0.2s ease;
+}
+#mainNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #f60146;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #f60146 !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(0, 0, 0, 0.7);
+   /* color: rgba(255, 255, 255, 0.7);*/
+  }
+  #mainNav .navbar-brand:hover {
+    color: #f60146;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    /*color: rgba(255, 255, 255, 0.7);*/
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0 1rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #f60146;
+  }
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  #mainNav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f60146;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #f60146;
+
+  }
+}
+/*cards*/
+.section-sobre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway Bold", Arial;
+  padding-top: 8.5rem;
+}
+
+#titulo-section{
+  font-size: 40px;
+}
+
+#highlight-cyan {
+  color: #c92fc9;
+}
+
+.line {
+  width: 247px;
+  height: 8px;
+  margin-top: 8px;
+  background: #6f4a9f;
+  border-radius: 10px;
+}
+
+.text-sobre {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 30px;
+}
+
+.identity{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: center;
+  gap: 50px;
+  font-family: 'Raleway Bold';
+}
+
+.id-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 510px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #e4e4e4;
+  background: linear-gradient(59.61deg, #EDEEF6 3.53%, rgb(255, 255, 255) 98.56%);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  /* transform: translateY(-0.25em); */
+  transition: 0.5s;
+}
+
+.id-img{
+  width: 220px;
+}
+
+#id-img{
+  width: 255px;
+}
+
+.id-title{
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.id-text{
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 40px 0px 40px;
+}
+
+#botao{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 50px;
+  right: 50px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 16px;
+  background: #212529;
+  color: white;
+}
+
+#slogan{
+  color: #250364;
+  font-size:xx-large;
+}
+
+/* Header */
+.main{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cartao > h1{
+  font-family: "Lilita One", sans-serif;
+  font-size:70px;
+  color: black;
+  margin-bottom: 30px;
+
+}
+.cartao > p{
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #444647;
+}
+.right{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right img{
+  width: 90%;
+}
+.cartao{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  border: none;
+}
+@media only screen and (max-width: 950px) {
+  .cartao{
+      width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main{
+      flex-direction: column;
+  }
+  .left > h1{
+      display: block;
+  }
+  .left{
+      width: 100%;
+      height: auto;
+  }
+  .right{
+      width: 100%;
+      height: auto;
+  }
+  .left-img{
+      width: 50vw;
+  }
+  .cartao{
+      width: 100%;
+  }
+  .cartao > h1{
+    font-size:50px;
+    color: black;
+    margin-bottom: 30px;
+  }
+}
+
+/* Quem somos */
+.sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 100px;
+  flex-direction: column;
+}
+.sobre h2{
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.sobre p{
+  text-align:justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .sobre p{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .sobre{
+  padding: 50px;
+
+  }
+}
+
+/* Serviços e Projetos */
+.sessao h2{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-weight: 700;
+
+}
+.sessao{
+  padding-bottom: 5px;
+}
+.sessao p{
+  text-align: center;
+  font-weight: 700;
+}
+.coluna1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.coluna1 .img1{
+  height: 220px;
+  padding: 3%;
+  border-radius: 50%;
+  padding: 2px 5px ;
+  margin: 25px;
+
+}
+.coluna2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coluna2 .img2{
+  height: 220px;
+  padding: 3%;
+  border-radius: 50%;
+  padding: 2px 5px ;
+  margin: 25px;
+
+}
+/* Contato */
+.contato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: row;
+}
+.contato h2{
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.divcontato1{
+  width: 50vw;
+}
+.divcontato2{
+  width: 50vw;
+
+}
+@media only screen and (max-width: 950px) {
+  .contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+  }
+  .divcontato1{
+    width: 90vw;
+    margin-bottom: 40px;
+  }
+  .divcontato2{
+    width: 90vw;
+  
+  }
+}
+/* Des */
+
+
+
+/* Components */
+.saber-mais{
+  width: 50%;
+  background-color: #250364;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+}
+.form{
+  width: 150px;
+  background-color: #B200D0;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+.preco{
+  margin-top: 40px;
+  text-align: justify;
+}
+
+/* Parcerias */
+.parca-section{
+  background-color: #f3f3f3;
+}
+.parca-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.parca-logo div{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity:0.5;
+  transform: translateY(-5px);
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: space-around;
+  transition: 1s;
+}
+.parceiros{
+  margin-bottom: 50px;
+}
+.parceiros img{
+  height: 150px;
+  width: 150px;
+  object-fit:scale-down;
+  transition: 0.5s ease;
+}
+.parca-logo div span{
+  opacity: 1;
+  transform: translateY(10px);
+}
+.parca-logo div:hover{
+  opacity:1;
+  transform: translateY(-15px);
+  transition: 0.5s ease;
+}
+
+/* Rodapé */
+.footer-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #212529;
+  color: white;
+}
+.div-1 h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #c7c7c7;
+  font-weight: 700;
+}
+.div-1{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.div-2{
+  text-align: left;
+}
+.div-2 h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #c7c7c7;
+  font-weight: 700;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .button{
+  color: #040C28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 200ms ease;
+}
+.wrapper .facebook-icon:hover{
+  background: #0677e8;
+  color: #f3f3f3;
+}
+.wrapper .twitter-icon:hover{
+  background: rgb(29, 155, 240);  
+  color: #f3f3f3;
+}
+.wrapper .insta-icon:hover{
+  background: #E1306C;
+  color: #f3f3f3;
+}
+.wrapper .yt-icon:hover{
+  background: red;
+  color: #f3f3f3;
+}
