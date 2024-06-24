@@ -115,6 +115,7 @@ body::-webkit-scrollbar-thumb {
 
   }
 }
+
 /*cards*/
 .section-sobre {
   display: flex;
@@ -189,9 +190,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .id-text{
-  font-size: 22px;
+  font-size: 15px;
   text-align: center;
   margin: 20px 40px 0px 40px;
+}
+@media (max-width: 768px) {
+  .identity {
+       flex-direction: column;
+   }
+
+  .id-card {
+       width: 90%; /* Ajusta a largura para ocupar toda a linha em telas menores */
+       margin-bottom: 20px;
+   }
 }
 
 #botao{
@@ -213,7 +224,7 @@ body::-webkit-scrollbar-thumb {
   font-size:xx-large;
 }
 
-/* Header */
+/* Header quem */
 .main{
   width: 100%;
   height: 100vh;
@@ -243,8 +254,8 @@ body::-webkit-scrollbar-thumb {
   color: #444647;
 }
 .right{
-  width: 50vw;
-  height: 100vh;
+  width: 45vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,15 +304,24 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 30px;
   }
 }
-
 /* Quem somos */
 .sobre{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #212529;
+  background-color: #250364;
   color: #ffffff;
   padding: 100px;
+  flex-direction: column;
+}
+
+.plata{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 0px;
   flex-direction: column;
 }
 .sobre h2{
@@ -313,8 +333,23 @@ body::-webkit-scrollbar-thumb {
   margin-left: 20%;
   margin-right: 20%;
 }
+
+.plata h2{
+  margin-top: 100px;
+  font-weight: 700;
+}
+.plata p{
+  text-align:justify;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 @media only screen and (max-width: 600px) {
-  .sobre p{
+  .sobre .p{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .plata p{
     margin-left: 1%;
     margin-right: 1%;
   }
@@ -322,6 +357,79 @@ body::-webkit-scrollbar-thumb {
   padding: 50px;
 
   }
+  .plata{
+    padding: 50px;
+  
+    }
+} 
+/* nossos projetos */
+.section-projetos{
+  padding-top: 8.5rem;
+  margin-top: 4rem;
+}
+
+#headingBlue{
+  color: #d20808;
+  font-size: 30px;
+}
+
+.cadastro-button{
+  font-family: 'Raleway Bold', 'Arial';
+  margin-top: 30px;
+  margin-left: 6px;
+  border-radius: 12px;
+  width: 246px;
+  height: 73px;
+  background: #6f4a9f;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  color: #fafad2;
+  font-size: 24px;
+  border: none;
+}
+
+#prototipo-img{
+ 
+  width: 450px;
+  margin-left: 4rem;
+  border-radius: 50px;
+}
+
+#projeto-topics{
+
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container-projetos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway Bold", Arial;
+}
+
+.projeto-class{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 550px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.projeto-text{
+  margin-top: 80px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 50%;
+}
+
+.prototipo-class{
+  margin-top: 40px;
+  width: 50%;
 }
 
 /* Serviços e Projetos */
@@ -367,12 +475,118 @@ body::-webkit-scrollbar-thumb {
   margin: 25px;
 
 }
+/* CARDS */
+
+.card{
+  background-color: #f7f7f7;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  max-width: 250px;
+  color: #2f3747;
+  padding:40px 20px ;
+  border: 0px solid #2735E0;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 1em #dcdcdc;
+  transition: 0.7s;
+}
+
+.titulo-card{
+  
+  font-weight: bold;
+  margin-top:10px;
+  color: #2f3747;
+
+}
+.text-card{
+  
+  margin-top:10%;
+  color: #1d1d1d;
+
+}
+.Img-card-topo{
+
+  border-radius:0px;
+  font-size: 5rem;
+  text-align: center;
+  max-width: 35%;
+  margin: 0 auto;
+}
+.Img-card-equipe{
+  border-radius:180px;
+  max-width: 70%;
+}
+
+
+
+/* Plataforma */
+
+
+.container-plataformas{
+  
+  padding: 2rem 12% 5rem 12%;
+  width: 100%;
+
+  align-items: center;
+  flex-wrap: wrap;
+  
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+.container-ilustration{
+  width: 50%;
+  padding-right: 1rem;
+}
+.ilustration-plataform-content{
+  width: 100%;
+  margin-top: 0rem;
+}
+.ilustration-plataform-content img{
+  max-width: 100%;
+}
+
+.container-cards-plataformas{
+  width: 50%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.container-cards-plataformas .card{
+  background-color: #f7f7f7;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin-left: 60px;
+  flex-direction: column;
+  text-align: center;
+  min-width: calc(100%/3);
+  min-height:200px ;
+  color: #2f3747;
+  padding:40px 20px ;
+  border: 0px solid #2735E0;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 2em #dcdcdc;
+  transition: 0.7s;
+}
+.container-cards-plataformas .Img-card-topo{
+
+  border-radius:0px;
+  font-size: 5rem;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  color:#2f3747;
+}
 /* Contato */
 .contato{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #212529;
+  background-color: #250364;
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -394,7 +608,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #212529;
+    background-color: #250364;
     color: #ffffff;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -485,7 +699,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #212529;
+  background-color: #250364;
   color: white;
 }
 .div-1 h1 {
@@ -520,8 +734,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   margin: 0 5px;
   overflow: hidden;
   background: #fff;
