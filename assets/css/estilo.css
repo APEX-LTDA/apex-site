@@ -760,3 +760,7 @@ body::-webkit-scrollbar-thumb {
   background: red;
   color: #f3f3f3;
 }
+.wrapper .git-icon:hover{
+  background: #0d1117;
+  color: #f3f3f3;
+}
