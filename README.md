@@ -1,3 +1,3 @@
 # apex-site
 Site institucional da empresa APEX
-https://github.com/APEX-LTDA/apex-site.git
+https://apex-ltda.github.io/apex-site/
