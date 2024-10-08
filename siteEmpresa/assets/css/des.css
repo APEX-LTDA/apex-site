@@ -1,0 +1,212 @@
+
+
+
+
+
+
+
+
+
+
+/* sci EQUIPE DE DESENVOLVIMENTO*/
+
+
+
+.section-equipe{
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    justify-content: center;
+   
+}
+
+
+.des{
+    padding: 2rem 12%;
+    align-items: center;
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+/* CAROUSEL SIMPLES */
+.glider{
+    
+    align-items: center;
+    display: flex;
+    background:transparent;
+}
+.carousel--simple-prev{
+    user-select: none;
+    z-index: 1;
+    color: #1d1d1d;
+    cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    align-items: center;
+    left: 2%;
+}
+.carousel--simple-next{
+    user-select: none;
+    z-index: 1;
+    color: #1d1d1d;
+    cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    align-items: center;
+    right: 2%;
+}
+
+/* FIM */
+
+
+/* FIM */
+
+.social_devs{
+    display: flex;
+    flex-direction: row;
+}
+.social_devs a{
+    margin: 5px;
+    font-size:x-large;
+    color: #1d1d1d;
+}
+
+.des .card-equipe{
+    position: relative;
+    width: 300px ;
+    height: 400px !important;
+    background-color: #f7f7f7;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    
+}
+.des .card-equipe .content{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+.des .card-equipe:hover .content{
+    
+    opacity:1;
+    transform: translateY(-30px);
+}
+.des .card-equipe .content .imgBx{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+.des .card-equipe .content .imgBx img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.des .card-equipe .content .contentBx .tituloCardEquipe{
+    color: #1d1d1d;
+    margin:20px 0 10px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    
+    
+}
+.des .card-equipe .content .contentBx .tituloCardEquipe span{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: initial;
+}
+.des .card-equipe .sci{
+    position: absolute;
+    bottom:-10px;
+    display:flex;
+}
+.des-flex{
+   
+    padding:6% auto;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 5rem;
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin:0% auto;
+    gap: 2rem;
+}
+.sobre{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+   
+    
+}
+
+
+.equipe{
+    
+    background-size: cover;
+    
+}
+
+
+/* CARDS */
+
+.card{
+    background-color: #f7f7f7;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    max-width: 250px;
+    color: #2f3747;
+    padding:40px 20px ;
+    border: 0px solid #2735E0;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 1em #dcdcdc;
+    transition: 0.7s;
+}
+
+.titulo-card{
+    
+    font-weight: bold;
+    margin-top:10px;
+    color: #2f3747;
+
+}
+.text-card{
+    
+    margin-top:10%;
+    color: #1d1d1d;
+
+}
+.Img-card-topo{
+
+    border-radius:0px;
+    font-size: 5rem;
+    text-align: center;
+    max-width: 35%;
+    margin: 0 auto;
+}
+.Img-card-equipe{
+    border-radius:180px;
+    max-width: 70%;
+}
+
