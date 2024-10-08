@@ -1,0 +1,46 @@
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+body{
+    flex: 0;
+    background-color: #0B0C34;
+}
+
+/*Nav*/
+#mainNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: rgb(11, 12, 52);
+    transition: background-color 0.2s ease;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #ffffffbe;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #f60146;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #f60146 !important;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(11, 12, 52, 0.85);
+  }
+}
+
+
+/*Header*/
+#slogan{
+    color: #f60146;
+}
+
+/*Quem Somos*/
+#quem-somos{
+    background-color: #030427;
+    color: #ffffff;
+}
