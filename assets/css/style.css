@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("des.css");
+/* Reset */
+
+*{
+    transition: 0.3s;
+  margin: 0;
+  font-family: 'Poppins',"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body *{
+  
+  box-sizing: border-box;
+  
+
+}
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Barra de rolagem */
+body::-webkit-scrollbar {
+
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+   border-radius: 50;
+  background-color: rgb(71, 71, 73);
+  border: 3px solid transparent;
+}
+
+/* Menu */
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: background-color 0.2s ease;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #f60146;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #f60146 !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(0, 0, 0, 0.7);
+   /* color: rgba(255, 255, 255, 0.7);*/
+  }
+  #mainNav .navbar-brand:hover {
+    color: #f60146;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    /*color: rgba(255, 255, 255, 0.7);*/
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0 1rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #f60146;
+  }
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  #mainNav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f60146;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #f60146;
+
+  }
+}
+
+/* Botão modo escuro */
+#botao{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 16px;
+    background: #212529;
+    color: white;
+}
+
+/*Header*/
+.main{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .main .left{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#slogan{
+    color: #250364;
+    font-size:xx-large;
+}
+#header .main .cartao > h1{
+  font-family: "Lilita One", sans-serif;
+  font-size:70px;
+  color: black;
+  margin-bottom: 30px;
+
+}
+#header .main .cartao > p{
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #444647;
+}
+#header .main .right{
+  width: 45vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#header .main .right img{
+  width: 90%;
+}
+#header .main .cartao{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  border: none;
+}
+@media only screen and (max-width: 950px) {
+  #header .main .cartao{
+      width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main{
+      flex-direction: column;
+  }
+  #header .main .left > h1{
+      display: block;
+  }
+  #header .main .left{
+      width: 100%;
+      height: auto;
+  }
+  #header .main .right{
+      width: 100%;
+      height: auto;
+  }
+  #header .main .left-img{
+      width: 50vw;
+  }
+  #header .main .cartao{
+      width: 100%;
+  }
+  #header .main .cartao > h1{
+    font-size:50px;
+    color: black;
+    margin-bottom: 30px;
+  }
+}
+
+/*Quem Somos*/
+#quem-somos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #250364;
+    padding-inline: 42px;
+    color: #ffffff;
+    flex-direction: row;
+}
+#quem-somos .right{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+#quem-somos .right h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+#quem-somos .right .text-sobre{
+}
+#quem-somos .left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quem-somos .left img{
+    width: 50%;
+}
+
+
+
+/* Components */
+.saber-mais{
+    width: 50%;
+    background-color: #250364;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    transition: .3s;
+}
+.saber-mais:hover{
+    background-color: #E1306C;
+}

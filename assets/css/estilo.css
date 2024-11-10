@@ -116,6 +116,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+/* Section*/
+
 /*cards*/
 .section-sobre {
   display: flex;

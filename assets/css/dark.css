@@ -17,7 +17,7 @@ body {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 /* Menu 0B0C34 */
-.Cor{
+body{
     flex: 0;
     background-color: #0B0C34;
 }
